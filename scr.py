@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-# s=Service('/usr/bin/chromedriver')
+s=Service('/usr/bin/chromedriver')
 
 options = Options()
 options.add_argument("--headless")  # comment it to run with normal way
