@@ -7,7 +7,7 @@ s=Service(ChromeDriverManager().install())
 
 options = Options()
 options.add_argument("--headless")  # comment it to run with normal way
-driver = webdriver.Chrome(service=s, options=options)
+driver = webdriver.Chrome('/usr/bin/chromedriver', options=options)
 
 driver.get('http://books.toscrape.com/')
 
