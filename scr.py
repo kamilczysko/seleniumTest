@@ -6,7 +6,7 @@ options = Options()
 options.add_argument("--headless")  # comment it to run with normal way
 
 #driver = webdriver.Chrome(chrome_options=options)  # DeprecationWarning: chrome_options
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver = webdriver.Chrome(service=ChromeDriverManager().install(), options=options)
 
 driver.get('http://books.toscrape.com/')
 
