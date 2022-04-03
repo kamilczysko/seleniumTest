@@ -1,12 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+import chromedriver_binary
 
 options = Options()
 options.add_argument("--headless")  # comment it to run with normal way
 
 #driver = webdriver.Chrome(chrome_options=options)  # DeprecationWarning: chrome_options
-driver = webdriver.Chrome(service=ChromeDriverManager().install(), options=options)
+driver = webdriver.Chrome(options=options)
 
 driver.get('http://books.toscrape.com/')
 
